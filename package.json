@@ -1,0 +1,24 @@
+{
+  "name": "pw-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justtowelie/pw-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justtowelie/pw-js/issues"
+  },
+  "homepage": "https://github.com/justtowelie/pw-js#readme",
+  "dependencies": {
+    "playwright": "^1.30.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.30.0"
+  }
+}
