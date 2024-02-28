@@ -1,24 +1,41 @@
 {
-  "name": "pw-js",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/justtowelie/pw-js.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/justtowelie/pw-js/issues"
-  },
-  "homepage": "https://github.com/justtowelie/pw-js#readme",
-  "dependencies": {
-    "playwright": "^1.30.0"
-  },
-  "devDependencies": {
-    "@playwright/test": "^1.30.0"
-  }
+	"name": "pw-js",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"lint-staged": {
+		"**/*.{js,jsx,ts,tsx}": [
+			"npx prettier --write",
+			"npx eslint --fix"
+		]
+	},
+	"scripts": {
+		"prepare": "husky",
+		"test": "npx playwright test --config=playwright.config.ts --headed",
+		"prettier": "prettier --write .",
+		"eslint": "eslint '**/*.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/justtowelie/pw-js.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/justtowelie/pw-js/issues"
+	},
+	"homepage": "https://github.com/justtowelie/pw-js#readme",
+	"devDependencies": {
+		"@playwright/test": "1.41.0",
+		"@types/node": "20.11.21",
+    "eslint": "8.29.0",
+		"@typescript-eslint/eslint-plugin": "5.59.2",
+		"@typescript-eslint/parser": "5.59.2",
+		"eslint-config-prettier": "9.1.0",
+		"eslint-plugin-no-only-tests": "3.1.0",
+		"husky": "8.0.0",
+		"lint-staged": "13.1.2",
+		"prettier": "2.8.1"
+	}
 }
