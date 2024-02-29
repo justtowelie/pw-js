@@ -9,4 +9,9 @@ test.describe('Home page tests @homepage', () => {
 	test('successfully launch and validate homepage', async ({ homePage }) => {
 		await homePage.validateHomePageLoaded();
 	});
+
+	test('successfully perform a search from the homepage', async ({ homePage, commonMethods }) => {
+		await homePage.performSearch('Radiant Tee');
+		await commonMethods.assertTextIsPresent('Radiant Tee');
+	});
 });
