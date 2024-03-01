@@ -36,7 +36,7 @@ export class Purchases {
 		const productList = await this.itemLocator.all();
 		if (productList.length === 0) {
 			console.error('No products found.');
-			return;
+			return false;
 		}
 		// Generates a random number
 		const randomIndex = Math.floor(Math.random() * productList.length);
