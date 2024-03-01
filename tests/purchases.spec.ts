@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
 	await setUpPage(page);
 });
 
-test.describe('Purchases', async () => {
+test.describe('Purchases @purchases @ui', async () => {
 	test('Successfully add and check out a product', async ({ homePage, purchases }) => {
 		await homePage.performSearch('t-shirt');
 		await purchases.selectAndAddItemToCart();

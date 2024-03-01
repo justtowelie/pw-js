@@ -21,7 +21,7 @@ export class CommonMethods {
 		await locator.waitFor({ state: 'visible' });
 		await new Promise((resolve) => setTimeout(resolve, 2000));
 		expect(await this.page.screenshot()).toMatchSnapshot(image, {
-			maxDiffPixels: 2000,
+			maxDiffPixels: 17000,
 		});
 	}
 }

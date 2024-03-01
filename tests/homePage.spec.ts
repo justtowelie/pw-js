@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => {
 	await setUpPage(page);
 });
 
-test.describe('Home page tests @homepage', () => {
+test.describe('Home page tests @homepage @ui', () => {
 	test('successfully launch and validate homepage', async ({ homePage }) => {
 		await homePage.validateHomePageLoaded();
 	});
