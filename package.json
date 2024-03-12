@@ -30,6 +30,7 @@
 	"devDependencies": {
 		"@faker-js/faker": "8.0.2",
 		"@playwright/test": "1.41.0",
+		"@types/mssql": "9.1.5",
 		"@types/node": "20.11.21",
 		"@typescript-eslint/eslint-plugin": "5.59.2",
 		"@typescript-eslint/parser": "5.59.2",
@@ -38,6 +39,7 @@
 		"eslint-plugin-no-only-tests": "3.1.0",
 		"husky": "8.0.0",
 		"lint-staged": "13.1.2",
+		"mssql": "10.0.2",
 		"prettier": "2.8.1"
 	}
 }
